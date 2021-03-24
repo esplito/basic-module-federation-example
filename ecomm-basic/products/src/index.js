@@ -1,10 +1,5 @@
-import faker from 'faker';
-
-let products = '';
-
-for (let i = 0; i < 5; i++) {
-  const name = faker.commerce.productName();
-  products += `<div>${name}</div>`;
-}
-
-document.querySelector('#dev-products').innerHTML = products;
+/*
+Gives webpack the ability to load up the code async. 
+This enables webpack to check what it needs to be able to run the code inside bootstrap.js
+*/
+import('./bootstrap');
